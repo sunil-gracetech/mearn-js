@@ -1,0 +1,607 @@
+Javascript:-
+1- Datatype,variable,operators.
+2- type conversion
+3- input and output
+4- control flow statemement-
+	a- decision making statement
+	b- switch case statement
+	c- loop
+5- Array-
+	array declaration
+	array type
+	array manipulations
+	array methods.
+6- Object-
+	object declaration
+	object manipulations
+	object methods.
+7- Function-
+	a- pre-define function
+		1- string
+		2- math
+		3- datetime
+		4- timing
+	b- user define function:-
+		simple function
+		function expression
+		immediate callable function IEFE
+		function recusion
+		function clouser
+		callback function
+		pure & impure function.
+8- DOM-(Document Object Model)
+	a- DOM get and Set
+	b- Dynamic DOM
+	c- DOM  walk
+	d- Events
+9- BOM-
+	a- cookies
+	b- localStorage
+	c- session Storage
+	d- window.location
+	e- navigator object.
+10- JSON-
+	json
+	json datatype
+	json parsing
+11-AJAX-
+	about ajax
+	creating request
+	sending request
+	handling response
+	using headers
+	get/post difference
+	calling API
+-------------------------------------------------------------------------------------------
+Advance JS-
+	1- prototype	
+	2- prototype chaining
+	3- OOPS-
+		class, constructor,property,method,inheirtance.
+	4- using strict mode
+	5- object reflaction
+---------------------------------------------------------------------------------------------------
+ECMA6:-
+	1- let & const
+	2- arrow function
+	3- rest & spear operator
+	4- template literals
+	5- OOPs.
+		class, constructor, proeprty, methods, extends, super etc.
+	6- modules
+	7- promises
+		promise
+		promise chaining
+	8- async and await
+	9- map & set
+	10- internationalization & localization
+--------------------------------------------------------------------------------------------------------------
+Javascript introduction:-
+	javascript is the client side object oriented, object based and dynamic programming laguage, that can be for application development .
+	javascript interpreted/parse by DOM parser in browser.
+	
+Datatype-:- 
+	1- primitive type- number,string,boolean,datetime,undefine, null.
+	2- non-primitive type- array,object, regular expression etc.
+---------------------------------------------------------------------------------------------------------------
+Note: to get type of any variable use typeof operator.
+--------------------------------------------------------------------------------------------------------------
+Operators:- 
+	1- arithamatic operator:  +, -, /, %, *
+	2- relational operator: >, <, >=, <=, ==, !=
+	3- logical operator: &&, ||
+	4- conditional operator/ternary operator: condition?expr1:expr2
+	5- assignment operator: =
+	6- increment & decrement operator: ++,--
+	7- delete: delete
+	8- typeof: typeof
+	9- instanceof: instanceof
+	10- concatenation operator: +
+	----------------------------------------------------------------------------
+
+variable:- 
+	variable is the container or placeholder, which respresent address in memory, where we can set the value and get the value.
+in javascript varialbe can declare with var keyword.
+exa:
+var name="deepak"
+var age=22
+var gender="male"
+--------------------------------------------------
+variable declaration rules:-
+1- varialbe name must be alphanumaric.
+2- variable  name must start with alphabete.
+3- varialbe name can't contains any  special chars.
+4- variable name can't contains blank space, you can use _ place of it.
+5- varialbe name are case sensitive.
+---------------------------------------------------------------------------------------------------
+type conversion:-
+ 	javascript provide feature to convert one type to another. 
+	exa:
+		parseInt
+		parseFloat
+		using object constructor
+
+1- w.a.p. to enter 2 number and print addition ?
+-----------------------------------------------------------------------------------------
+Javascript Input and Output:-
+		Input: to take input from user javascript provide different-2 functions.
+		document.getElementById
+		document.getElementsByName
+		document.getElementsByClassName
+		document.getElementsByTagName
+		document.querySelector
+		document.querySelectorAll
+----------------------------------------------------------------------------------------------------
+Output:- to provide user output , javascript  provide serveral methods.
+	1- alert
+	2- console.log, console.warn, console.info, console.error
+	3- document.write()
+	4- DOM property-
+		innerHTML
+		innerText
+		value
+-------------------------------------------------------------------------------------------------
+Control Flow Statement:-
+	1- decision making statement:-
+	2- switch case
+	3- loop
+--------------------------------------------------------------------------------------------------
+1- decision making statement:-
+	if else
+	else if/ladder if
+	nested if.
+---------------------------------------------------------------------------------------------------
+if(condition)
+{
+statements;
+}
+else{
+statements;
+}
+---------------------------------------------------------
+w.a.p. to enter 2 number and print largest ?
+----------------------------------------------------------
+w.a.p. to enter age of person and check he/she eligible for vote or not, where age must highest or equal to 18 for vote.
+------------------------------------------------------------------------------------------------------------------------
+else if:-
+
+if(condition)
+{
+statements;
+}
+else if(condition)
+{
+statements;
+}
+else{
+statements;
+}
+------------------------------------------------------------------------------------------------------------------------
+1-w.a.p. to enter 3 number and print max number.
+2- w.a.p. to enter marks of 5 subject and calculate following
+	total marks
+	percentage
+	grade
+3- w.a.p. to enter goods purchase amount and calculate discount, based on amount.
+	where if amount>=10000 then discount will be 15%.
+	if amount is >=5000 and less then 10000 then discount will be 10%
+	if amount>=3000 and less than 5000 then discount will be 6%.
+	else calculate how many amount required to get discount.
+	also print rest/payable amount.
+---------------------------------------------------------------------------------------------------------------------
+4- w.a.p. to enter electricity consumed unit and calculate bill.
+	where if unit>=1000 then charges will be 7rs per unit.
+	and if unit>=500 and <1000 then charges will be 5rs per unit.
+	and if unit>=200 and <500 then chages will 3.90rs per unit
+	if unit <200 then changes will be 2.5rs per unit.
+	also add 499 surchage only when unit >=500
+--------------------------------------------------------------------------------------------------------------------- 
+quiz appliation
+games
+slider,loader,gallery,popup, zoomer etc.
+TODO Application
+E-commerce App
+-------------------------------------------------
+
+Loop:- looping is the way to  repeat the  statements n-times, where using loop we can execute some statements again and again.
+type of loop-
+1- while loop
+2- for loop
+3- do while loop
+4- foreach
+5- for in
+6- for of
+--------------------------------------------------------------------------
+1- while loop: 
+	initialization;
+	while(condition)
+	{
+	statements;
+	inc/dec;
+	}
+---------------------------------------------------------------------------
+0=> false
+1=> true
+---------------------------------------------------------------------------
+var a=10;
+var b=5;
+---------------------------------------------------------------------------
+for loop: 
+	for(initialization; condition; inc/dec)
+	{
+	body//
+	}
+---------------------------------------------------------------------------
+
+/*
+function Test(){
+    var unit= parseInt(document.getElementById("txt").value);
+    var bill=0;
+    if(unit>=1000)
+    {
+         bill=unit*7;
+    }
+    else if(unit>=500)
+    {
+         bill=unit*5;
+    }
+    else if(unit>=200)
+    {
+         bill=unit*3.90;
+    }
+    else{
+         bill=unit*2;
+    }
+    alert("Total bill "+bill)
+
+}
+
+document.getElementById("mybtn").addEventListener("click",Test);
+
+*/
+
+// var i=1;
+// var num=80;
+// while(i<=10){
+//      document.write("<li>"+num*i+"</li>")
+//     i++;
+//     //i=i+1; 
+// }
+
+
+//console.log(1 +  "2" + "2"); 122
+ //console.log(1 +  +"2" + "2"); //32
+ //console.log(1 +  -"1" + "2");
+ //console.log(-"1" +  "1" + "2");
+//console.log( "A" - "B" + "2");
+//console.log( "A" - "B" + 2);
+
+
+//for loop
+
+for(var i=1; i<=10; i++){
+     console.log(i)
+}
+
+---------------------------------------------------------------------------------------------------
+1- w.a.p. to enter any number and print factorial of it.
+2- w.a.p. to enter any check the number is prime or not.
+3- w.a.p. to enter any number and print it in reverse order.
+4- w.a.p. to enter term of series and generate fibnucci series.
+5- w.a.p. to enter any number and check the number is armstrong or not.
+
+6- w. the program to print following pattern.
+
+1 2 3 4 5
+1 2 3 4 5
+1 2 3 4 5
+1 2 3 4 5
+---------------------------------------------
+1 2 3 4 5 
+1 2 3 4
+1 2 3
+1 2
+1
+----------------------------------------------
+1 
+1 2
+1 2 3
+1 2 3 4
+1 2 3 4 5
+---------------------------------------------
+5 4 3 2 1
+5 4 3 2 
+5 4 3
+5 4
+5
+------------------------------------------------
+5 4 3 2 1
+4 3 2 1
+3 2 1
+2 1
+1
+-----------------------------------------------
+
+Sol-1-
+function factorial(){
+     var num= parseInt(document.getElementById("txt").value);
+    // var fact=1;
+    /* 
+     while(num>0){
+          fact=fact*num--
+     }
+     */
+    /*
+    for(var fact=1;num>0;num--)
+    {
+         fact=fact*num;
+    } 
+    */ 
+     alert("Factorial is= "+fact)
+}
+-------------------------------------------------------------------------------
+Sol-2-
+
+function factorial(){
+    var num=document.getElementById("txt").value;
+        num=parseInt(num);
+    var flag=true;
+     for(var i=2; i<num; i++){
+          if(num%i==0)
+          {
+               flag=false;
+          }
+    }
+    if(flag==true)
+    alert(num+" is prime number")
+    else
+    alert(num+" is not prime number")
+
+}
+----------------------------------------------------------------
+pattern-1-
+
+//pattern
+document.write("<hr/>")
+
+for(var i=1; i<=4; i++){
+
+     for(var j=1; j<=5; j++){
+          document.write(" "+j+" ")
+     }
+     document.write("<br/>")
+}
+
+---------------------------------------------------------------------
+1- w.a.p. to print 1-50 number.
+2- w.a.p. to print all the number divisible by 7 between 1-100.
+3- w.a.p. to print table of given number.
+---------------------------------------------------------------------
+// for(var row=1; row<=5; row++){
+   
+//     for(var col=5; col>=row; col--){
+
+//         document.write("  "+col)
+    
+//     }
+    
+//     document.write("<br/>")
+
+// }
+
+
+document.write("</hr>")
+
+var k=5;
+for(var row=1; row<=5; row++){
+   
+    for(var col=k; col>=1; col--){
+
+        document.write("  "+col)
+    
+    }
+    k--
+    document.write("<br/>")
+
+}
+----------------------------------------------------------------------
+1- what are the javascript engine ?
+	javascript engine responsible for load the code and parse the code and interpret                 code and execute it. in different-2 web browser has different-2 engine.
+Example: 
+Google chrome=> V8 engine
+Mozila FireFox=> Spider monkey
+Internet Explorer/Edge=> Chakra
+Opera  =>carakan
+safari  => javascript core
+--------------------------------------------------------------------
+
+Array:- array is the collection items, where each item stored on particular index position, and index start from 0. 
+
+How to declare array:- there is 2 method to declare array.
+1- using array literals
+	var arrayName=[item1,item2,...,itemn];
+2- using array constructor
+	var arrayName=new Array(length/items)
+---------------------------------------------------------------------------
+var items=["php","java","python","asp"]
+
+/*
+for(var i=0; i<items.length; i++){
+    document.write("<li>"+items[i]+"</li>")
+}*/
+
+/*
+items.forEach(function(item,index){
+    document.write("<li>"+item+"</li>")
+})
+*/
+
+/*
+items.forEach(walk)
+function walk(item,index){
+    document.write("<li>"+item+"</li>")
+}
+*/
+
+for(var item of items){
+    document.write("<li> Course: "+item+"</li>")
+}
+------------------------------------------------------------------------------------------
+Array method: to manipulate array, javascript provide 2 type method
+	a- array mutator- push,pop,shift,unshift,splice,sort.
+
+	b- array non-mutator:- forEach,filter,map,every,reduce,concat, join etc.
+---------------------------------------------------------------------------------------
+push: this method add item in array using LIFO style. mean last in first out.
+pop- this method remove last item from array, using LIFO style.
+unshift- this method add item in FIFO style.
+shift- this method remove item from array using FIFO style.
+splice-: this method can add and remove multiple items from specific index.
+sort- this method sort the item in assending and decending order.
+-----------------------------------------------------
+Non-mutator methods-
+1- forEach:- this method walk within array one by one using callback function.
+2- filter:- this method return a new array by filtering items to the given criteria.
+3- map- this method walk within array and return new array , by modifying array items.
+4- every- this method return true if the given criteria matched by every item. otherwise return false.
+5- reduce- this method can use to modify array items and return the result.
+6- concat- this method combine 2 or more array and return new array.
+7- join- this method join the array into string, by the given seprator.
+-------------------------------------------------------------------------------------------------
+var items=["php","java","python","asp"]
+
+//var xitem=["html","css","js"]
+
+//items.push(...xitem)
+
+// xitem.forEach(e=>{
+//     items.push(e)
+// })
+
+//items.pop()
+
+//items.unshift("html")
+//items.shift()
+
+//items.splice(2,0,"android")
+//items.splice(items.indexOf("java")+1,0,"ios")
+//items.splice(1,2)
+
+//items.sort()  assending
+//items.sort().reverse() decending
+
+/*
+var fitems=items.filter(function(e,i){
+    return e.startsWith("p")
+})
+*/
+//console.log(fitems)
+
+/*
+var nums=[4,43,6,7,9,32,44,6,11]
+evens=nums.filter(function(e){return e%2==0})
+console.log(evens)
+*/
+
+
+// var nums=[4,43,6,7,9,32,44,6,11]
+// var sqaure=nums.map(function(e,i){
+//     return e*e
+// })
+// console.log(nums)
+// console.log(sqaure)
+
+/*
+var nums=[42,43,6,7,9,32,44,6,11]
+var r=nums.every(function(e){return e>=5})
+console.log(r)
+*/
+
+/*
+var nums=[2,3,4,5]
+var r=nums.reduce(function(current,next){
+    return current+next
+})
+console.log(r)
+*/
+
+/*
+var nums=[2,3,4,5]
+var nums2=[7,8,9]
+
+var nums3=nums.concat(nums2)
+console.log(nums3)
+*/
+
+/*
+var items=["php","java","python"]
+var str=items.join("|");
+console.log(str)
+*/
+-----------------------------------------------------------------------------------
+Q- How to check the item is array or not ?
+----------------------------------------------------------------------------------
+Object:-  object is th similar to array ,but it is non-sequential type, where it create key and value pair. where key is also called property. object can store one object information/records. but a object can nested.
+there is several way to create object-
+
+1- object literals:
+	var obj={"key":"value","key2":"value"}
+
+2- object constructor:-
+	var obj=new Object();
+
+3- object using function constructor
+	
+	var MyObject=function(val1,val2){
+		this.property1=val1
+		this.property2=val2
+		}	
+	var obj=new MyObject(val1,vl2)
+----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+---------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
