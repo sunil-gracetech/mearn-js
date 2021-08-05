@@ -558,6 +558,91 @@ there is several way to create object-
 		}	
 	var obj=new MyObject(val1,vl2)
 ----------------------------------------------------------------------
+Cofigurable Object:- these objects are allow to cofigure proeprty access, it read only or write only or both.
+  
+        var Customer=function(name,email,salary){
+            this.name=name;
+            this.email=email;
+            var _salary=salary;
+
+            Object.defineProperty(this,"salary",{
+                get:function(){return _salary;},
+                set:function(p){
+                    if(p>=10000){
+                        _salary=p;
+                    }
+                    else{
+                        throw Error("salary can't min 10k")
+                    }
+                }
+
+            })
+        }
+
+        var obj=new Customer("deepak","dee232@gmail.com",12000);
+        obj.salary-=100
+        console.log(obj.salary)
+      
+	  -------------------------------------------------------------
+	  Object Cloning:-
+
+	  
+    <script>
+      var customer={"name":"deepak","age":23,"gender":"male"}
+     // var customer2=customer;
+     // customer2.age=50
+     
+     /*
+     function CloneObject(obj){
+         var temp={}
+         if(obj instanceof Object){
+             for(var p in obj)
+             temp[p]=obj[p]
+
+             return temp
+         }
+         else{
+             throw Error(" argument is not correct object !")
+         }
+     }
+     
+     var customer2=CloneObject(customer)
+     */
+
+     //built in method
+     var customer2={}
+     Object.assign(customer2,customer)
+     
+     customer2.age=30
+     console.log(customer)
+      console.log(customer2)
+    </script>
+-----------------------------------------------------------
+Object.seal
+Object.freez
+
+ var customer={"name":"deepak","age":23,"gender":"male"}
+       // Object.seal(customer)
+       Object.freeze(customer)
+       delete customer.gender
+       customer.age=55
+       customer.address="noida"
+       console.log(customer)
+----------------------------------------------------------
+Call & Bind:-
+
+   var employee={"name":"deepak","salary":130000}
+
+        function CalSalary(com){
+            return this.salary/12+com
+        }
+        //var salary=CalSalary.bind(employee, 5000)
+        //console.log(salary())
+        var salary=CalSalary.call(employee, 5000)
+        console.log(salary)
+
+
+
 
 
 
