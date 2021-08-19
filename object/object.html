@@ -10,16 +10,56 @@
     
     <script>
      var employee={"name":"deepak","salary":130000}
+      //  Object.seal(employee)
+        //Object.freeze(employee)  
+        //employee.age=23;
+        //employee.name="aajay"
 
-        function CalSalary(com){
-            return this.salary/12+com
-        }
-        var salary=CalSalary.bind(employee, 5000)
-        console.log(salary())
+       // var emp2=Object.assign({},employee)
+        /*
+       for(var p in employee)
+       {
+           console.log(employee[p])
+       }
+*/
 
 
+var list=[{
+    "country":"India",
+    "states":[
+    {"state":"UP","city":["lck","prg"]},
+    {"state":"MP","city":["lck","prg"]},
+    {"state":"DELHI","city":["lck","prg"]},
+    {"state":"MUM","city":["lck","prg"]}
+    ]
+    },
+    {
+    "country":"USA",
+    "states":[
+    {"state":"UP2","city":["lck","prg"]},
+    {"state":"MP2","city":["lck","prg"]},
+    {"state":"DELHI2","city":["lck","prg"]},
+    {"state":"MUM2","city":["lck","prg"]}
+    ]
+    }]
 
+    var tmp=`<ol>`
+    list.forEach(function(item){
+        tmp+=`<li>${item.country}</li>`
+        tmp+=`<ul>`
+            item.states.forEach(function(e){
+                tmp+=`<li>${e.state}</li>`
+                tmp+=`<ol>`
+                    e.city.forEach(function(ee){
+                        tmp+=`<li>${ee}</li>`
+                    })
+                    tmp+=`</ol>`
+            })
+            tmp+=`</ul>`
+    })
+tmp+=`</ol>`
 
+document.write(tmp)
 
     </script>
 </body>

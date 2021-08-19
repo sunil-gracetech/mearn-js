@@ -641,6 +641,112 @@ Call & Bind:-
         var salary=CalSalary.call(employee, 5000)
         console.log(salary)
 
+Object method:- 
+
+Object.seal
+Object.assign
+object.freez
+object.isfrozen
+object.issealed
+object.call
+delete
+---------------------------------------
+
+india
+	up
+		noida
+		lucknow
+		varansi
+		jaunpur
+		allahabad
+	mp
+		jabalpur
+	gujrat
+		xyz
+		abc
+----------------------------------------
+
+[{
+"country":"India"
+"states":[
+{"state":"UP","city":["lck","prg"]},
+{"state":"MP","city":["lck","prg"]},
+{"state":"DELHI","city":["lck","prg"]},
+{"state":"MUM","city":["lck","prg"]}
+]
+},
+{
+"country":"USA"
+"states":[
+{"state":"UP","city":["lck","prg"]},
+{"state":"MP","city":["lck","prg"]},
+{"state":"DELHI","city":["lck","prg"]},
+{"state":"MUM","city":["lck","prg"]}
+]
+}
+
+}
+]
+
+---------------------------------------------------------------------
+function:- 
+	1- pre define:-
+		string:- substring,substr,indexOf,lastIndeOf,split,toupper,tolower, slice, 		charAt, charCodeAt,trim  etc.
+
+		math
+		datetime
+		timing
+
+	2- user define:-
+
+------------------------------------------------------------------------------------------
+Assignment of string:- 
+1- w.a.p. to enter a string and check the string is pelindrom or not ?
+2- w.a.p. to enter a string and check each word occurance ?
+3- w.a.p. to enter fullName and print in abbrivated format
+	input : raj kumar verma
+	output: R.K. Verma
+4- w.a.p. to enter a email and print in following format.
+	input: deepak212@gmail.com
+	output: dee******@gmail.com
+5- w.a.p. to enter a string and check specific word frequency.
+6- w.a.p. to enter email address and print username and domain seprate
+	input : deepak12@gmail.com
+	output: UserName:  deepak12
+		Domain: @gmail.com
+------------------------------------------------------------------------------------------ 
+Math function: math function perform mathmatical operation. these function exist in Math static object.
+
+abs: return absolute number
+pow: return power value of first number by second number
+ceil: return nearest up integer
+floor: return down integer
+round: return nearest integer
+random: return random number
+----------------------------------------------
+
+datetime: these function exist in Date constructor object.
+
+timing function: these functions call after a set of time interval.
+	these are following:
+		a- setInterval & clearInterval
+		b- setTimeout & clearTimeOut
+		---------------------------------------------
+Assignment: 
+
+1- create a digital clock
+2- create a countdown timer for 30 minute
+-------------------------------------------------------
+
+User-Define function:
+
+
+
+
+
+
+
+
 
 
 
