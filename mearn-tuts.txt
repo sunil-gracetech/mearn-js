@@ -739,6 +739,33 @@ Assignment:
 -------------------------------------------------------
 
 User-Define function:
+1- simple function
+2- function expression
+3- immediate invoke function expression (IIFE)
+4- constructor function
+5- recursive function
+6- function clouser
+7- callback function
+8- function with arguments and default arguments
+9- pure and impure function
+10- function hoisting
+------------------------------------------------------
+1- 
+
+function functionName(args){
+	//function body
+
+	return value;
+}
+------------------------------------------------------
+
+2- 
+
+var functionName=function(args){
+	//function body
+	return value;
+}
+-----------------------------------------------------
 
 
 
