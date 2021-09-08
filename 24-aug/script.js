@@ -18,7 +18,7 @@ var fun=(function(name){
 })("sandeep")
 */
 
-
+/*
 var Customer=(function(){
 
     function Customer(amt){
@@ -38,5 +38,16 @@ var cc3=new Customer(2300)
 console.log(cc)
 console.log(cc2)
 console.log(cc3.getAmount())
+*/
+
+function PrintSandeep(i){
+    if(i<=10){
+        console.log("Sandeep "+i)
+        i++
+        return PrintSandeep(i)
+    }
+}
+
+PrintSandeep(1)
 
 

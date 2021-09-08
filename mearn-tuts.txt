@@ -767,6 +767,53 @@ var functionName=function(args){
 }
 -----------------------------------------------------
 
+5- recursive function:  a function that call itself, inside it , called recursive function, it create a behaviours like loop. where recursive function must be call finite number of time.
+syntax:
+
+function functionName(){
+	if(condition)
+	{
+		do stuff
+		return functionName();
+	}
+	else{
+		do stuff
+		return false;
+	}
+}
+
+-------------------------------
+let suppose we have a nested array ,where we don't know how many elements inside array or how may sub array inside array, then how to walk on array each elements.
+
+-----------------------------------------------------
+function clouser: a clouser is the inner function , which access its outer function variables. a clouser always create a nested function function structure. where one is parent and one or more child function.
+clouser create lexical scope for variables and data, so it secure data from outside script hacking.
+--------------------------------------------------------------------
+callback function: - a function that pass as argument in a function, called callback function. a callback can use to handle response of function in async behaviours.
+-----------------------------------------------------
+
+function with arguments: a arguments keyword default created in each function, which holds all the arguments incomming in function parameters. so without recieving each individual parameters,we can handle it by arguments.
+
+
+pure and impure function:- a pure function must be modify reference of object, while impure function do not modify main object.
+----------------------------------------------------------------
+1- what IIFE , and why we need it ?
+2- what is clouser function, why need clouser?
+3- suppose we have a nested array, and we walk through each element in array, then how to do it. where we do not know how many nested array inside array.
+4- write a function which produce same result if we call it like-
+	sum(2,3)       =>5
+	sum(2)(3)      =>5
+	sum(2)(3)(4)   =>9
+	--------------------------------
+5- what is difference between simple function and constructor function ?
+6- what callback function, why we need it ? explain with example.
+----------------------------------------------------------------------
+DOM:-
+
+
+
+
+
 
 
 
